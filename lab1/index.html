@@ -4,41 +4,52 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Лабораторная работа 1</title>
+        <title>Лабораторная работа 2</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
-    <body style= "font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgba(185, 185, 185, 0.507);">
-        <h1>Это моя первая HTML страница</h1>
-        <hr>
-        <h1 style="color:hotpink">О себе</h1>
-        <p><b>waas</b> <i>born</i> <del>on</del> in <tt>Russian Federation</tt>.</p>
-
-        <h2>Какие жанры фильмов мне нравятся:</h2>
-        <ul>
-            <li style="font-size:17px">биографические</li>
-            <li style="font-size:15px">хорроры</li>
-            <li style="font-size:13px">триллеры</li>
-            <li style="font-size:11px">приключения</li>
-        </ul>
-
-        <div id="favorite_music">
-            <h2>Какая музыка мне нравится:</h2>
-            <ol>
-                <li>почти любая</li>
-            </ol>
+    <body>            
+        <div class="header">
+            <h1>Это моя первая HTML страница</h1>
         </div>
+        <hr>
+        <div class="content">
+            <div class="content-left">
+                <div class="aboutMe">
+                    <h1>О себе</h1>
+                    <p class="bornPlace"><b>waas</b> <i>born</i> <del>on</del> in <tt>Russian Federation</tt>.</p>
+                </div>
 
-        <h2>как связаться со мной:</h2>
-        <a href="https://t.me/nineteenzz">tg</a>
-        <br><br>
+                <div class = "favoriteFilms">
+                    <h2>Какие жанры фильмов мне нравятся:</h2>
+                    <ul class="favoriteFilmsList">
+                        <li>биографические</li>
+                        <li>хорроры</li>
+                        <li>триллеры</li>
+                        <li>приключения</li>
+                    </ul>
+                </div>
 
-        <a href="https://vk.com">
-            <img 
-                src="images\cat.jpg" 
-                alt="ошибка загрузки"
-                width="700" 
-                height="100"
-            />
-        </a>
+                <div class="favoriteMusic">
+                    <h2>Какая музыка мне нравится:</h2>
+                    <ol class="favoriteMusicList">
+                        <li>почти любая</li>
+                    </ol>
+                </div>
+                
+                <div class="myLinks">
+                    <h2>как связаться со мной:</h2>
+                    <a class ="telega" href="https://t.me/nineteenzz">tg</a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <img 
+                    class = "cat"
+                    src="images\cat.jpg" 
+                    alt="ошибка загрузки"
+                />
+            </div>
+        </div>
     </body>
 </html>

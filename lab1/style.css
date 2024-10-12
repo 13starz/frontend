@@ -1,0 +1,87 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body{
+    background: rgba(185, 185, 185, 0.507);
+}
+
+.header{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+.content{
+    display: flex;
+}
+.content-left{
+    width:auto;
+    display: grid;
+    background:rgb(129, 141, 250);
+    border-radius: 10px;
+    padding: 10px;
+}
+.content-right{
+    margin-left: 100px;
+    width:auto;
+    display:grid;
+}
+
+.aboutMe{
+    color:rgb(255, 4, 129);
+    background: rgb(156, 156, 156);
+    width:300px;
+    text-align:center;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.bornPlace{
+    color:rgb(0, 0, 0);
+}
+
+.favoriteFilms{
+    background: rgb(156, 156, 156);
+    width:300px;
+    text-align:center;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.favoriteFilmsList{
+    text-align:left;
+    font-size: 20px;
+}
+
+.favoriteMusic{
+    background: rgb(156, 156, 156);
+    width:300px;
+    text-align:center;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top:10px;
+}
+.favoriteMusicList{
+    text-align:left;
+    font-size: 20px;
+}
+
+.myLinks{
+    background: rgb(156, 156, 156);
+    width:300px;
+    text-align:center;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.telega{
+    font-size: 15px;
+    color: rgb(0, 256, 0);
+}
+
+.cat{
+    width: 900px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+}

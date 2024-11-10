@@ -5,11 +5,39 @@ body{
 .header{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-
 .header h1{
     font-size: 30px;
     text-align: center;
     margin:auto;
+}
+.content{
+    display:flex;
+}
+.content-left{
+    width:auto;
+    margin-left:auto;
+}
+.content-right{
+    margin-left:5%;
+    margin-right:25%;
+    margin-top:28px;
+    font-size:20px;
+}
+.formtable{
+    border:2px solid black;
+    border-radius:8px;
+    background:rgba(163, 163, 163, 0.507);
+}
+.form{
+    display:flex;
+    padding:15px;
+}
+#button{
+    margin-left:35%;
+    margin-bottom:5px;
+}
+input{
+    margin-left:20px;
 }
 .navigation{
     display:block;
@@ -20,8 +48,6 @@ body{
 }
 table{
     font-size:25px;
-    margin-right:auto;
-    margin-left:auto;
 }
 td{
     text-align:center;

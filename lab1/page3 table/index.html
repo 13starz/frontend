@@ -18,76 +18,111 @@
     <hr>
 
     <div class="content">
-        <table>
-            <tr>
-                <th>id</th>
-                <th>Фамилия</th>
-                <th>Имя</th>
-                <th>Отчество</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Иванов</td>
-                <td>Иван</td>
-                <td>Иванович</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Михайлов</td>
-                <td>Михаил</td>
-                <td>Михаилович</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Константинов</td>
-                <td>Константин</td>
-                <td>Константинович</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Алексеев</td>
-                <td>Алексей</td>
-                <td>Алексеевич</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Сергеев</td>
-                <td>Сергей</td>
-                <td>Сергеевич</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Евгеньев</td>
-                <td>Евгений</td>
-                <td>Евгеньевич</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Дмитриев</td>
-                <td>Дмитрий</td>
-                <td>Дмитриевич</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Владимиров</td>
-                <td>Владимир</td>
-                <td>Владимирович</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>Максимов</td>
-                <td>Максим</td>
-                <td>Максимович</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Никитов</td>
-                <td>Никита</td>
-                <td>Никитович</td>
-            </tr>
+        <div class="content-left">
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>Фамилия</th>
+                    <th>Имя</th>
+                    <th>Отчество</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Иванов</td>
+                    <td>Иван</td>
+                    <td>Иванович</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Михайлов</td>
+                    <td>Михаил</td>
+                    <td>Михаилович</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Константинов</td>
+                    <td>Константин</td>
+                    <td>Константинович</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Алексеев</td>
+                    <td>Алексей</td>
+                    <td>Алексеевич</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Сергеев</td>
+                    <td>Сергей</td>
+                    <td>Сергеевич</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Евгеньев</td>
+                    <td>Евгений</td>
+                    <td>Евгеньевич</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Дмитриев</td>
+                    <td>Дмитрий</td>
+                    <td>Дмитриевич</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Владимиров</td>
+                    <td>Владимир</td>
+                    <td>Владимирович</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Максимов</td>
+                    <td>Максим</td>
+                    <td>Максимович</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Никитов</td>
+                    <td>Никита</td>
+                    <td>Никитович</td>
+                </tr>
 
-            <caption>Students</caption>
-        </table>
+                <caption>Students</caption>
+            </table>
+        </div>
+        
+        <div class="content-right">
+            <div class="formtable">
+                <form id="myform">
+                    <div class="form">
+                        <div class="form-left">
+                            <label for="fid">id:</label><br>
+                            <label for="fsecondname">Фамилия:</label><br>
+                            <label for="fname">Имя:</label><br>
+                            <label for="ffathername">Отчество:</label><br>
+                        </div>
+                        <div class="form-right">
+                            <input type="number" id="fid" name="fid"><br>
+                            <input type="text" id="fsecondname" name="fsecondname"><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <input type="text" id="ffathername" name="ffathername"><br>
+                        </div>
+                    </div>
+                    <input type="submit" id="button" value="Добавить" onclick="alert('Когда-нибудь эта кнопка будет вносить пользователя в таблицу')">
+                </form>
+            </div>
+        </div>
+
+        <!-- ТЕСТ -->
+        <script>
+            document
+            .getElementById("myform")
+            .addEventListener('submit',(event) => {
+                const form = new FormData(event.target);
+                console.log(Object.fromEntries(form));
+                event.preventDefault();
+            })
+        </script>
     </div>
 </body>
 </html>

@@ -1,0 +1,20 @@
+.cardbutton{
+    align-self:flex-end
+}
+
+.containerbiography{
+    margin-top:50px;
+}
+
+.navbarleft {
+    position: fixed;
+    height: 100%;
+    width: 150px;
+}
+
+#filmography{
+    margin-top:40px;
+}
+#myCarousel{
+    margin-left:150px;
+}
